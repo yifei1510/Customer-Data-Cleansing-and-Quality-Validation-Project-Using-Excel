@@ -100,3 +100,64 @@ Missing values were reviewed based on the business meaning of each field rather 
 ### 11. Final Dataset Review
 
 After cleaning, the output was reviewed to ensure improved consistency across key fields and to keep unresolved exception records separate from the final working file.
+
+## Skills
+- Microsoft Excel
+- Data Cleaning
+- Data Validation
+- Data Quality Review
+- Duplicate Detection
+- Helper Column Design
+- Text Standardisation
+- Date Standardisation
+- Missing Value Review
+- Exception Handling
+- Record-Level Validation
+- Find and Replace
+- Filters and Sorting
+- Text to Columns
+- Excel Functions (TRIM, PROPER, OR)
+- Manual Review of Suspicious Records
+
+## Results & Business Recommendation
+
+### Results
+
+The project produced a cleaner and more structured dataset that is more suitable for validation, filtering, reporting, and downstream analysis.
+
+### Quantified outcomes
+- Reviewed 999 raw rows
+- Identified 511 fully blank rows, representing 51.2% of the raw file
+- Reduced the dataset to 430 cleaned rows
+- Achieved an 11.9% reduction from the 488 non-blank source rows
+- Standardised Gender from 9 inconsistent labels to 2 clean categories
+- Standardised Marital_Status from 4 raw labels to 2 clean categories
+- Standardised Location into 4 consistent categories
+- Identified 10 suspicious records where customer IDs appeared in the Customer_Name field
+- Separated 50 repeated records across 19 customer IDs into a review file for confirmation
+
+### Business value
+- Reduced data noise by removing exact duplicates and blank rows.
+- Improved category consistency for filtering and reporting.
+- Increased confidence in customer-level records by isolating suspicious entries.
+- Improved date and text consistency to support downstream analysis.
+- Created a structured exception-handling process instead of making unsupported assumptions during cleaning.
+
+## Business Recommendation
+
+- Repeated customer IDs should be reviewed before deletion, as they may represent conflicting or business-valid repeated
+  records.
+- Validation helper columns should be used early in the cleaning process to identify suspicious patterns systematically.
+- Categorical fields should be standardised before building pivot tables, charts, or dashboards.
+- Missing values should be reviewed based on field meaning rather than filled mechanically.
+- Exception records should be stored separately for stakeholder confirmation when the correct value cannot be verified from
+  the source data.
+
+## Next Steps
+
+- Confirm the 50 repeated records across 19 customer IDs with the relevant stakeholder or source owner.
+- Complete manual correction of records where IDs were entered in the Customer_Name field instead of customer names.
+- Perform a final review of the cleaned CSV to remove any remaining blank or unresolved rows.
+- Use the cleaned dataset to create pivot tables, summary analysis, or dashboard visuals.
+- Extend this workflow in future projects using Power Query or SQL to demonstrate scalable data cleaning capability on
+  larger datasets.
