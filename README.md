@@ -82,8 +82,9 @@ This reduced Gender from 9 inconsistent labels to 2 standard categories, and red
 
 A validation formula was used to flag unrealistic age values:
 
+```excel
 =OR(C2<0,C2>100)
-
+```
 This supported logical validation at record level.
 
 ### 9. Date Standardisation
@@ -92,6 +93,10 @@ Mixed date formats in Purchase_Date were standardised using Text to Columns and 
 
 This improved consistency for sorting, grouping, and future time-based analysis.
 
+### 10. Missing Value Review
 
+Missing values were reviewed based on the business meaning of each field rather than being mechanically replaced with a single default value. This helped avoid introducing misleading information into fields such as Age, Amount, and Location.
 
+### 11. Final Dataset Review
 
+After cleaning, the output was reviewed to ensure improved consistency across key fields and to keep unresolved exception records separate from the final working file.
