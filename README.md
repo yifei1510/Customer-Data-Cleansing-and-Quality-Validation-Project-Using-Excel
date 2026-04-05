@@ -63,12 +63,11 @@ The `TRIM()` function was used to remove extra spaces from text fields, while `P
 
 Example formulas used:
 
-``excel
+```excel
 =TRIM(B2)
 =PROPER(H2)
+```
 
-
-### 7. Standardising Inconsistent Values
 
 ### 7. Standardising Inconsistent Values
 
