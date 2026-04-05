@@ -66,3 +66,14 @@ Example formulas used:
 ```excel
 =TRIM(B2)
 =PROPER(H2)
+
+### 7. Standardising Inconsistent Values
+
+The Find and Replace feature was used to standardise inconsistent categorical values, including:
+
+M / F → Male / Female
+Marrd → Married
+Sungle → Single
+
+This reduced Gender from 9 inconsistent labels to 2 standard categories, and reduced Marital_Status from 4 raw labels to 2 clean categories.
+
