@@ -68,7 +68,6 @@ Example formulas used:
 =PROPER(H2)
 ```
 
-
 ### 7. Standardising Inconsistent Values
 
 The Find and Replace feature was used to standardise inconsistent categorical values, including:
@@ -79,7 +78,19 @@ Sungle → Single
 
 This reduced Gender from 9 inconsistent labels to 2 standard categories, and reduced Marital_Status from 4 raw labels to 2 clean categories.
 
+### 8. Age Validation
 
+A validation formula was used to flag unrealistic age values:
+
+=OR(C2<0,C2>100)
+
+This supported logical validation at record level.
+
+### 9. Date Standardisation
+
+Mixed date formats in Purchase_Date were standardised using Text to Columns and Excel date formatting tools.
+
+This improved consistency for sorting, grouping, and future time-based analysis.
 
 
 
