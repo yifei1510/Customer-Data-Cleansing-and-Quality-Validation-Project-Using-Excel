@@ -57,7 +57,11 @@ These columns were used to identify:
   
 <img width="491" height="354" alt="customer_id checker_manuly" src="https://github.com/user-attachments/assets/123ba296-c608-4ff0-8752-e737388d6ec8" />
 
+
+
 <img width="407" height="157" alt="customer_name_checker" src="https://github.com/user-attachments/assets/8715d57a-98d3-4e97-9ce0-738689de818e" />
+
+
 
 
 <img width="447" height="29" alt="aGE CHECKER" src="https://github.com/user-attachments/assets/04c51ef0-c74e-40e0-887d-c3e7bc71a43f" />
