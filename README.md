@@ -63,9 +63,13 @@ The `TRIM()` function was used to remove extra spaces from text fields, while `P
 
 Example formulas used:
 
-```excel
+ excel
 =TRIM(B2)
 =PROPER(H2)
+
+
+
+### 7. Standardising Inconsistent Values
 
 ### 7. Standardising Inconsistent Values
 
@@ -76,4 +80,9 @@ Marrd → Married
 Sungle → Single
 
 This reduced Gender from 9 inconsistent labels to 2 standard categories, and reduced Marital_Status from 4 raw labels to 2 clean categories.
+
+
+
+
+
 
