@@ -40,6 +40,9 @@ The raw file was reviewed to identify blank rows, duplicate records, invalid tex
 ### 2. Duplicate Removal
 Exact duplicate rows were removed using **Data > Remove Duplicates** to reduce obvious redundancy in the dataset.
 
+<img width="634" height="242" alt="duplicate remove" src="https://github.com/user-attachments/assets/931d7303-11f3-42e1-b499-1d19813dbdaa" />
+
+
 ### 3. Validation Helper Columns
 Helper columns were created to support data quality checks, including:
 
@@ -51,9 +54,20 @@ These columns were used to identify:
 - repeated customer IDs
 - customer-ID-style values stored in the name field
 - unrealistic age values
+  
+<img width="491" height="354" alt="customer_id checker_manuly" src="https://github.com/user-attachments/assets/123ba296-c608-4ff0-8752-e737388d6ec8" />
+
+<img width="407" height="157" alt="customer_name_checker" src="https://github.com/user-attachments/assets/8715d57a-98d3-4e97-9ce0-738689de818e" />
+
+
+<img width="447" height="29" alt="aGE CHECKER" src="https://github.com/user-attachments/assets/04c51ef0-c74e-40e0-887d-c3e7bc71a43f" />
+
 
 ### 4. Repeated Customer ID Review
 Repeated customer IDs were filtered and reviewed separately to distinguish exact duplicates from records requiring business confirmation. A separate review file was created for these unresolved cases.
+
+<img width="755" height="368" alt="customer id repeated to be asked" src="https://github.com/user-attachments/assets/fbc2cf51-8ca2-4bed-94d8-01f305141fbf" />
+
 
 ### 5. Customer Name Validation
 A checker was applied to identify records where customer IDs appeared in the `Customer_Name` field instead of actual customer names. This process identified **10 suspicious name records** requiring further review or correction.
@@ -67,6 +81,12 @@ Example formulas used:
 =TRIM(B2)
 =PROPER(H2)
 ```
+
+<img width="629" height="199" alt="trim to remove space" src="https://github.com/user-attachments/assets/13cb6f3d-fa54-4529-b04e-86d530aa72bb" />
+
+<img width="605" height="287" alt="replace inproper value" src="https://github.com/user-attachments/assets/5a76bd92-ff0e-4548-81d9-e222039fda34" />
+
+
 
 ### 7. Standardising Inconsistent Values
 
@@ -92,6 +112,11 @@ This supported logical validation at record level.
 Mixed date formats in Purchase_Date were standardised using Text to Columns and Excel date formatting tools.
 
 This improved consistency for sorting, grouping, and future time-based analysis.
+
+<img width="468" height="323" alt="date_formatt_1" src="https://github.com/user-attachments/assets/3a7ec929-069e-445b-84cf-53577c676dd0" />
+
+<img width="431" height="333" alt="date_formatt_2" src="https://github.com/user-attachments/assets/fb86e120-d2e6-4eac-bc57-21dec684b954" />
+
 
 ### 10. Missing Value Review
 
