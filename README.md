@@ -4,7 +4,7 @@
 
 This Excel data cleaning project cleaned and validated a raw customer dataset by resolving duplicate rows, repeated customer IDs, invalid name entries, inconsistent category values, mixed date formats, extra spaces, and missing data. The dataset was reduced from **999 raw rows** to **430 cleaned rows and 8 columns**, including the removal of **511 fully blank rows (51.2%)**, improving overall data quality and reporting readiness.
 
-Using **Remove Duplicates, Find and Replace, Filters, and Excel formulas such as `TRIM()`, `PROPER()`**, the project standardised key fields, validated suspicious records, and separated **50 repeated records across 19 customer IDs** for further review, representing **5.0% of the raw dataset**. The final dataset is analysis-ready and can be directly imported into tools such as **Power BI, Excel, SQL, and other reporting platforms**.
+Using **Remove Duplicates, Find and Replace, Filters, and Excel formulas such as `TRIM()`, `PROPER()`**, the project standardised key fields, validated suspicious records, and separated **50 repeated records across 19 customer IDs** for further review, representing **5.0% of the raw dataset**. The cleaned output is significantly more structured and reporting-ready, with unresolved exception records separated for further business review.
 
 **Cleaned Dataset Link:**  
 [View the cleaned dataset](https://app.powerbi.com/groups/me/reports/864c22eb-ed0a-457e-a5ff-ec9c762b95fc/17275c38c6ba3b5cf624?experience=power-bi)
@@ -12,12 +12,14 @@ Using **Remove Duplicates, Find and Replace, Filters, and Excel formulas such as
 
 ## Business Problem
 
-The raw dataset was not suitable for direct reporting or analysis because it contained multiple data quality issues that could distort business outputs and reduce confidence in the results.
+The raw dataset required cleansing and validation before it could be used for reliable reporting or analysis. Multiple data quality issues were identified that could distort business outputs, weaken confidence in the dataset, and reduce the accuracy of downstream reporting.
 
 ### Key issues identified
 
-1. The raw file contained **999 rows**, but **511 rows** were fully blank.
-2. Some customer IDs appeared multiple times and could not be removed automatically without further review.
+1. The source file contained 999 rows, of which 511 rows were fully blank, creating unnecessary noise and reducing the usability of
+   the dataset.
+2. Several customer IDs were repeated, and some of these repeated records contained conflicting details. These cases could not be
+   removed automatically without risking data loss or incorrect reporting.
 3. Several values in the `Customer_Name` field were actually customer IDs instead of names.
 4. `Gender` included inconsistent labels such as `M`, `F`, `Female`, `female`, `MALE`, and `MAlE`.
 5. `Marital_Status` contained inconsistent values such as `Single`, `Marrd`, and `Sungle`.
